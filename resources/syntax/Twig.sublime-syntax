@@ -23,6 +23,7 @@ variables:
           |with|autoescape|pluralize|scoped|as
           |verbatim|starts|ends|matches|apply|do
           |flush|use|only|deprecated|embed|sandbox
+          |html_element
       )\b
     )
   end_tags: |-
@@ -30,7 +31,7 @@ variables:
       \b(?:
         endblock|endfor|endmacro|endset|endif|endwith
         |endautoescape|endverbatim|endapply|endembed
-        |endsandbox
+        |endsandbox|end_html_element
       )\b
     )
 
